@@ -1,8 +1,10 @@
-import BGLogo from "../../assets/Saly-26.svg";
+import { useNavigate } from "react-router-dom";
 
 import "./css/style.css";
+import BGLogo from "../../assets/Saly-26.svg";
 
 export default function LandingPage() {
+  const navigate = useNavigate();
   return (
     <main className="main--landing-page --horizontal-flex">
       <div className="text-container">
@@ -14,7 +16,10 @@ export default function LandingPage() {
           aliquid eaque, facere quisquam! Ab.
         </p>
         <div className="btn-container --verticle-flex --has-gap">
-          <button className="btn --primary-btn --has-hover-overlay">
+          <button
+            className="btn --primary-btn --has-hover-overlay"
+            onClick={() => navigate("/add-todos")}
+          >
             create a todo
           </button>
           <button className="btn --secondary-btn">Learn more</button>
