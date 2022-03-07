@@ -1,0 +1,10 @@
+.navbar {
+  align-items: center;
+  background: var(--NAVBAR-BACKGROUND-CLR);
+  justify-content: space-between;
+  padding: 0.8em var(--MAIN-PADDING-X);
+}
+
+.navbar .btn {
+  --BTN-PADDING-Y: 0.8em;
+}

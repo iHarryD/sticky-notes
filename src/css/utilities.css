@@ -22,6 +22,7 @@
 
 .--has-hover-overlay {
   position: relative;
+  z-index: 1;
 }
 
 .--has-hover-overlay::after {
@@ -35,6 +36,7 @@
   right: 0;
   bottom: 0;
   transition: opacity var(--TRANSITION-DURATION);
+  z-index: -1;
 }
 
 .--has-hover-overlay:hover::after {

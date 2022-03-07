@@ -27,6 +27,7 @@ ul {
 
 main {
   min-height: 100vh;
+  padding: VAR(--MAIN-PADDING-X);
 }
 
 img {
@@ -37,11 +38,12 @@ img {
   cursor: pointer;
   font-weight: 600;
   padding: var(--BTN-PADDING-Y) var(--BTN-PADDING-X);
+  text-transform: lowercase;
 }
 
 .btn.--primary-btn {
   background: var(--ACCENT-CLR);
-  color: var(--LIGHT-FONT-CLR);
+  color: var(--SECONDARY-FONT-CLR);
   border-radius: var(--BORDER-RADIUS);
 }
 
