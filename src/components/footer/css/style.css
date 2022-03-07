@@ -1,0 +1,24 @@
+.footer {
+  background: var(--ACCENT-CLR);
+  color: var(--SECONDARY-FONT-CLR);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.social-media-tab li {
+  margin: 10px;
+}
+
+.social-media-links:hover {
+  text-decoration: underline;
+}
+
+.portfolio-link {
+  margin-top: 20px;
+  opacity: 0.6;
+  transition: all var(--TRANSITION-DURATION);
+}
+
+.portfolio-link:hover {
+  opacity: 1;
+}

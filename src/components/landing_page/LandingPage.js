@@ -15,9 +15,9 @@ export default function LandingPage() {
         </p>
         <div className="btn-container --verticle-flex --has-gap">
           <button className="btn --primary-btn --has-hover-overlay">
-            Learn more
+            create a todo
           </button>
-          <button className="btn --secondary-btn">get started</button>
+          <button className="btn --secondary-btn">Learn more</button>
         </div>
       </div>
       <div className="img-container">
