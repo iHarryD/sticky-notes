@@ -1,6 +1,6 @@
 .navbar {
   align-items: center;
-  background: var(--NAVBAR-BACKGROUND-CLR);
+  background: var(--SECONDARY-BACKGROUND-CLR);
   justify-content: space-between;
   padding: 0.8em var(--MAIN-PADDING-X);
 }

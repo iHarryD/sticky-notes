@@ -16,7 +16,7 @@ button,
 input,
 a,
 ul {
-  background: inherit;
+  background: transparent;
   border: none;
   color: inherit;
   font-size: inherit;
@@ -27,7 +27,7 @@ ul {
 
 main {
   min-height: 100vh;
-  padding: VAR(--MAIN-PADDING-X);
+  padding: 1em VAR(--MAIN-PADDING-X);
 }
 
 img {
@@ -60,7 +60,7 @@ img {
 
 .btn.--secondary-btn::after {
   content: "";
-  background: var(--SECONDARY-BTN-HOVER-BACKGROUND-CLR);
+  background: var(--SECONDARY-BACKGROUND-CLR);
   border-radius: inherit;
   position: absolute;
   top: 0;

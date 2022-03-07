@@ -1,0 +1,62 @@
+.todo {
+  border-radius: var(--TODO-BORDER-RADIUS);
+  background: var(--TODO-BACKGROUND-CLR);
+  gap: 0.5em;
+  height: 13rem;
+  width: 13rem;
+}
+
+.todo-title {
+  overflow-x: clip;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.todo-description {
+  flex-grow: 1;
+  margin: 0.5em 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.todo-description::after {
+  background: linear-gradient(#0000, var(--TODO-BACKGROUND-CLR));
+  content: "";
+  height: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.todo-created-date {
+  font-size: 0.85em;
+  margin-bottom: 0.3em;
+  opacity: 0.8;
+}
+
+.todo-footer {
+  justify-content: space-between;
+}
+
+.--hover-icon-btn {
+  transition: all var(--TRANSITION-DURATION);
+}
+
+/*
+.--hover-icon-btn:hover {
+  transform: translateY(-3px);
+}
+*/
+
+.--hover-icon-btn:hover .edit-icon {
+  fill: rgb(32, 71, 180);
+}
+
+.--hover-icon-btn:hover .delete-icon {
+  fill: rgb(189, 23, 23);
+}
+
+.--hover-icon-btn:hover .completed-icon {
+  fill: rgb(21, 129, 39);
+}

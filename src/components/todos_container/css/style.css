@@ -1,0 +1,7 @@
+.your-todos-section {
+  background: var(--SECONDARY-BACKGROUND-CLR);
+  border-radius: var(--BORDER-RADIUS);
+  height: 500px;
+  margin-top: 1em;
+  padding: 2em;
+}
