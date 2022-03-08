@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sticky-notes/static/css/main.87915c8b.css",
+    "main.js": "/sticky-notes/static/js/main.40185f28.js",
+    "static/js/787.20843c7a.chunk.js": "/sticky-notes/static/js/787.20843c7a.chunk.js",
+    "static/media/Saly-26.svg": "/sticky-notes/static/media/Saly-26.ed87390101182072b3bbfcbecc0d83ab.svg",
+    "index.html": "/sticky-notes/index.html",
+    "main.87915c8b.css.map": "/sticky-notes/static/css/main.87915c8b.css.map",
+    "main.40185f28.js.map": "/sticky-notes/static/js/main.40185f28.js.map",
+    "787.20843c7a.chunk.js.map": "/sticky-notes/static/js/787.20843c7a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87915c8b.css",
+    "static/js/main.40185f28.js"
+  ]
+}
