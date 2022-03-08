@@ -3,12 +3,23 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import {
+  EditingTodoProvider,
+  ModalProvider,
+  TodosProvider,
+} from "./TodoContext";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <TodosProvider>
+      <ModalProvider>
+        <EditingTodoProvider>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </EditingTodoProvider>
+      </ModalProvider>
+    </TodosProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

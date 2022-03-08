@@ -1,0 +1,8 @@
+.new-todo-btn {
+  transition: all var(--TRANSITION-DURATION);
+}
+
+.new-todo-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 5px 5px #d6d6d6;
+}

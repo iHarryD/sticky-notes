@@ -34,6 +34,10 @@ img {
   max-width: 100%;
 }
 
+.input {
+  padding: var(--INPUT-PADDING-Y) var(--INPUT-PADDING-X);
+}
+
 .btn {
   cursor: pointer;
   font-weight: 600;
@@ -44,24 +48,24 @@ img {
 
 .btn.--primary-btn {
   background: var(--ACCENT-CLR);
-  color: var(--SECONDARY-FONT-CLR);
   border-radius: var(--BORDER-RADIUS);
+  color: var(--SECONDARY-FONT-CLR);
 }
 
 .btn.--secondary-btn {
-  padding: calc(var(--BTN-PADDING-Y) - var(--BTN-INPUT-BORDER-WIDTH))
-    calc(var(--BTN-PADDING-X) - var(--BTN-INPUT-BORDER-WIDTH));
   background: #0000;
   border: var(--BTN-INPUT-BORDER-WIDTH) solid var(--ACCENT-CLR);
   border-radius: var(--BORDER-RADIUS);
+  padding: calc(var(--BTN-PADDING-Y) - var(--BTN-INPUT-BORDER-WIDTH))
+    calc(var(--BTN-PADDING-X) - var(--BTN-INPUT-BORDER-WIDTH));
   position: relative;
   z-index: 1;
 }
 
 .btn.--secondary-btn::after {
-  content: "";
   background: var(--SECONDARY-BACKGROUND-CLR);
   border-radius: inherit;
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -83,5 +87,9 @@ img {
 
 .btn:disabled {
   opacity: 0.7;
+  pointer-events: none;
+}
+
+.btn svg {
   pointer-events: none;
 }

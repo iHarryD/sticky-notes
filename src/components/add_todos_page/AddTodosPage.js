@@ -1,12 +1,19 @@
 import "./css/style.css";
 
 import TodosContainer from "../todos_container/TodosContainer";
+import NewTodoModal from "../new_todo_input_modal/NewTodoModal";
+import { useModal } from "../../TodoContext";
 
 export default function AddTodosPage() {
+  const { isModalActive, setIsModalActive } = useModal();
   return (
     <main>
+      {isModalActive && <NewTodoModal modalStateSetter={setIsModalActive} />}
       <section className="--has-padding --horizontal-flex --centered-flex">
-        <button className="btn --primary-btn --horizontal-flex --centered-flex --has-gap">
+        <button
+          className="new-todo-btn btn --primary-btn --horizontal-flex --centered-flex --has-gap"
+          onClick={() => setIsModalActive(true)}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"

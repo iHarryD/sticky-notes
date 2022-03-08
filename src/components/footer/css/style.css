@@ -13,6 +13,11 @@
   text-decoration: underline;
 }
 
+.brain-svg {
+  fill: #ffc0cb;
+  width: 0.8rem;
+}
+
 .portfolio-link {
   margin-top: 20px;
   opacity: 0.6;

@@ -6,6 +6,10 @@
   width: 13rem;
 }
 
+.completed-todo {
+  opacity: 0.6;
+}
+
 .todo-title {
   overflow-x: clip;
   text-overflow: ellipsis;
@@ -33,30 +37,4 @@
   font-size: 0.85em;
   margin-bottom: 0.3em;
   opacity: 0.8;
-}
-
-.todo-footer {
-  justify-content: space-between;
-}
-
-.--hover-icon-btn {
-  transition: all var(--TRANSITION-DURATION);
-}
-
-/*
-.--hover-icon-btn:hover {
-  transform: translateY(-3px);
-}
-*/
-
-.--hover-icon-btn:hover .edit-icon {
-  fill: rgb(32, 71, 180);
-}
-
-.--hover-icon-btn:hover .delete-icon {
-  fill: rgb(189, 23, 23);
-}
-
-.--hover-icon-btn:hover .completed-icon {
-  fill: rgb(21, 129, 39);
 }

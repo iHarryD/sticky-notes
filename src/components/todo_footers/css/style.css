@@ -1,0 +1,23 @@
+.todo-footer {
+  justify-content: space-between;
+}
+
+.--icon-only-btn {
+  transition: all var(--TRANSITION-DURATION);
+}
+
+.--icon-only-btn:hover .edit-icon {
+  fill: rgb(32, 71, 180);
+}
+
+.--icon-only-btn:hover .delete-icon {
+  fill: var(--RED-CLR);
+}
+
+.--icon-only-btn:hover .completed-icon {
+  fill: var(--GREEN-CLR);
+}
+
+.--icon-only-btn .incomplete-icon {
+  fill: var(--GREEN-CLR);
+}
