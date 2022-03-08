@@ -14,7 +14,7 @@ ReactDOM.render(
     <TodosProvider>
       <ModalProvider>
         <EditingTodoProvider>
-          <BrowserRouter>
+          <BrowserRouter basename="sticky-notes">
             <App />
           </BrowserRouter>
         </EditingTodoProvider>
